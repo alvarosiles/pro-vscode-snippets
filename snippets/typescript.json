@@ -1,0 +1,52 @@
+{
+    "Console Texto Colorido 💬": {
+        "prefix": "con",
+        "body": [
+            "console.clear();",
+            "console.log(\"%c\" + ${1:ingresar_texto},`color: #2ECC40; font-weight: bold;`);"
+        ],
+        "description": "Console.log con texto colorido"
+    },
+    "Console JSON Colorido 🧩": {
+        "prefix": "conjson",
+        "body": [
+            "console.clear();",
+            "console.log(\"%c\" + JSON.stringify(${1:ingresar_JSON}, null, 2), \"color: #2ECC40; font-weight: bold;\");"
+        ],
+        "description": "Console.log JSON colorido"
+    },
+    "Console Array Colorido 📊": {
+        "prefix": "contable",
+        "body": [
+            "console.table(${1:ingresar_array});"
+        ],
+        "description": "Console.table para arrays u objetos"
+    },
+    "onPress Normal 🖱️": {
+        "prefix": "onp",
+        "body": [
+            "onPress={() => {",
+            "    console.log('Se presionó');",
+            "}}"
+        ],
+        "description": "onPress normal con mensaje en consola"
+    },
+    "onPress Async ⚡": {
+        "prefix": "onpasync",
+        "body": [
+            "onPress={async () => {",
+            "    try {",
+            "        const empresa = await MDL.empresa.getFull();",
+            "        if (!empresa?.key) {",
+            "            throw new Error('Error: los datos de la empresa faltan o no son válidos');",
+            "        }",
+            "        ${1:// Continuar con la lógica usando empresa}",
+            "    } catch (error: any) {",
+            "        console.error(error);",
+            "        ${2:// Manejo adicional de error, e.g., SNotification.send(...) }",
+            "    }",
+            "}}"
+        ],
+        "description": "onPress con función async y manejo de errores"
+    }
+}
