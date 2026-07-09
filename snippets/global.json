@@ -1,0 +1,9 @@
+{
+	"TODO": {
+		"prefix": "todo",
+		"body": [
+			"TODO: ${1:pendiente}"
+		],
+		"description": "Marcador de tarea pendiente, disponible en cualquier tipo de archivo"
+	}
+}

@@ -1,0 +1,70 @@
+<!--
+  Archivo de prueba para los snippets de la extensión "Pro VSCode Snippets".
+
+  Cómo probar:
+  1. Presioná F5 en VSCode para abrir el Extension Development Host.
+  2. Abrí este archivo ahí (o cualquier archivo .html/.js/.ts/.jsx).
+  3. Borrá el contenido de una sección y escribí el prefix + Tab.
+
+  Snippets HTML (snippets/html.json):
+    html      -> HTML Base 10 (estructura básica con título "Bienvenido alvaro")
+    julieta   -> HTML Base Julieta (estructura básica con título "Bienvenido julieta")
+
+  Snippet Global (snippets/global.json), funciona en cualquier lenguaje:
+    todo      -> TODO: pendiente
+
+  Snippets JavaScript (snippets/javascript.json):
+    con       -> console.log / console.table con estilos de color
+    onp       -> onPress normal o async con manejo de errores
+
+  Snippet React/React Native (snippets/react.json):
+    rncx      -> Componente de clase con conexión a redux
+
+  snippets/css.json y snippets/typescript.json están vacíos por ahora.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido alvaro</title>
+</head>
+<body>
+
+    <header>
+        <h1>Pro VSCode Snippets</h1>
+        <p>Página de prueba para verificar el funcionamiento de los snippets de la extensión.</p>
+    </header>
+
+    <main>
+        <section id="html-snippets">
+            <h2>Snippets HTML</h2>
+            <p>Prefixes: <code>html</code>, <code>julieta</code></p>
+            <!-- TODO: probar los prefixes acá abajo -->
+        </section>
+
+        <section id="global-snippets">
+            <h2>Snippet Global</h2>
+            <p>Prefix: <code>todo</code></p>
+        </section>
+
+        <section id="javascript-snippets">
+            <h2>Snippets JavaScript</h2>
+            <p>Prefixes: <code>con</code>, <code>onp</code></p>
+            <script>
+                // Probar acá los prefixes "con" y "onp"
+            </script>
+        </section>
+
+        <section id="react-snippets">
+            <h2>Snippets React / React Native</h2>
+            <p>Prefix: <code>rncx</code> (usar en un archivo .jsx)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Extensión: alvarosiles.pro-vscode-snippets</p>
+    </footer>
+
+</body>
+</html>

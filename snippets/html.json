@@ -1,0 +1,36 @@
+{
+    "HTML Base 10": {
+        "prefix": "html",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "    <meta charset=\"UTF-8\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "    <title>Bienvenido alvaro</title>",
+            "</head>",
+            "<body>",
+            "    ${1}",
+            "</body>",
+            "</html>"
+        ],
+        "description": "Estructura básica HTML5 con título personalizado"
+    },
+    "HTML Base Julieta": {
+        "prefix": "julieta",
+        "body": [
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "    <meta charset=\"UTF-8\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "    <title>Bienvenido julieta</title>",
+            "</head>",
+            "<body>",
+            "    ${1}",
+            "</body>",
+            "</html>"
+        ],
+        "description": "Estructura básica HTML5 con título 'Bienvenido julieta'"
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "name": "pro-vscode-snippets",
+  "publisher": "alvarosiles",
+  "displayName": "Pro VSCode Snippets",
+  "description": "Add code snippets for building components",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/typescript.json"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/css.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.json"
+      },
+      {
+        "path": "./snippets/global.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarosiles/pro-vscode-snippets.git"
+  },
+  "icon": "images/app.png",
+  "license": "Check in License in the root folder",
+  "bugs": {
+    "url": "https://github.com/alvarosiles/pro-vscode-snippets/issues"
+  },
+  "homepage": "https://github.com/alvarosiles/pro-vscode-snippets",
+  "keywords": [
+    "Snippets",
+    "JavaScript"
+  ]
+}

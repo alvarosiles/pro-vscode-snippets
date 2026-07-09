@@ -1,0 +1,30 @@
+{
+	"cre": {
+	  "prefix": "rncx",
+	  "body": [
+		"import React, { Component } from 'react';",
+		"import { View, Text } from 'react-native';",
+		"import { connect } from 'react-redux';",
+		"",
+		"class ${1:index} extends Component {",
+		"\tconstructor(props) {",
+		"\t\tsuper(props);",
+		"\t\tthis.state = {",
+		"\t\t};",
+		"\t}",
+		"",
+		"\trender() {",
+		"\t\treturn (",
+		"\t\t\t<View>",
+		"\t\t\t\t<Text> ${1:index} </Text>",
+		"\t\t\t</View>",
+		"\t\t);",
+		"\t}",
+		"}",
+		"const initStates = (state) => {",
+		"\treturn { state }",
+		"};",
+		"export default connect(initStates)(${1:index});"
+	  ]
+	}
+  }
