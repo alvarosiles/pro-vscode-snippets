@@ -1,0 +1,30 @@
+{
+    "Flex Container": {
+        "prefix": "flex",
+        "body": [
+            "display: flex;",
+            "justify-content: ${1:flex-start};",
+            "align-items: ${2:center};",
+            "flex-wrap: ${3:nowrap};"
+        ],
+        "description": "Bloque CSS de contenedor flex"
+    },
+    "Media Query Base": {
+        "prefix": "mq",
+        "body": [
+            "@media (max-width: ${1:768px}) {",
+            "    ${2:selector} {",
+            "        ${3:property}: ${4:value};",
+            "    }",
+            "}"
+        ],
+        "description": "Media query base"
+    },
+    "Transition Rapida": {
+        "prefix": "trans",
+        "body": [
+            "transition: ${1:all} ${2:0.3s} ${3:ease};"
+        ],
+        "description": "Snippet rápido de transición CSS"
+    }
+}

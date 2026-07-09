@@ -1,0 +1,195 @@
+// tengo que crear sniper para crear un tabla con json quemado
+// con scroll
+// con boton
+{
+	"Escribir Transparent 🔹": {
+		"prefix": "tr",
+		"body": [
+			"transparent"
+		],
+		"description": "Inserta la palabra 'transparent'"
+	},
+	"Background Color 🔹": {
+		"prefix": "bac",
+		"body": [
+			"backgroundColor=\"#fff\""
+		],
+		"description": "Inserta backgroundColor blanco"
+	},
+	"Style View 🔹": {
+		"prefix": "sty",
+		"body": [
+			"style={{ padding: 10, paddingBottom: 5, paddingTop: 5 }}"
+		],
+		"description": "Inserta style con padding predeterminado"
+	},
+	
+	// "🧠 Limpiar con RegExp para código limpio": {
+	// 	"prefix": [
+	// 		"no",
+	// 		"nota"
+	// 	],
+	// 	"body": [
+	// 		"^\\s*\\n",
+	// 		"^\\s*//.*",
+	// 		"\\{\\s*/\\*[\\s\\S]*?\\*/\\s*\\}",
+	// 		"[ ]{2,}",
+	// 		"^\\t+",
+	// 		"^\\s*console\\.log\\(.*\\);\\s*$",
+	// 		"^\\s*debugger;\\s*$",
+	// 		"^import .* from .*;\\s*\\n?",
+	// 		"[ \\t]+$",
+	// 		",,+"
+	// 	],
+	// 	"description": "Lista de RegExp para limpieza de código"
+	// },
+
+
+
+
+ 
+// ## 🔹 Limpieza de comentarios
+// * Elimina todos los comentarios del código.
+// * Detecta y elimina comentarios de una sola línea (`//`).
+// * Detecta y elimina comentarios multilínea (`/* ... */`).
+// * Elimina comentarios dentro de JSX (`{/* ... */}`).
+// ## 🔹 Consola y debugging
+// * Detecta y elimina `console.log`, `console.warn` y `console.info`.
+// * En bloques `catch`, conserva únicamente `console.error` con su mensaje.
+// * Elimina cualquier uso de `debugger`.
+// ## 🔹 Imports
+// * Detecta y elimina imports no utilizados.
+// * Elimina imports duplicados.
+// ## 🔹 React / JSX
+// * Detecta y elimina fragmentos vacíos de React (`<></>`).
+// * Elimina fragmentos JSX innecesarios.
+// * Detecta y elimina expresiones vacías como `{}` dentro de JSX.
+// * Elimina `{null}`, `{undefined}` y `{""}` innecesarios.
+// * Detecta props no utilizadas.
+// * Verifica dependencias correctas en `useEffect`.
+// ## 🔹 Espacios y formato
+// * Limpia espacios múltiples dejando solo uno.
+// * Convierte tabs a espacios (o viceversa, pero consistente).
+// * Corrige líneas que comienzan con tabulaciones innecesarias.
+// * Elimina espacios o tabs al final de cada línea.
+// * Mantiene indentación consistente.
+// ## 🔹 Sintaxis y errores
+// * Detecta y corrige comas duplicadas (`,,`).
+// * Verifica uso correcto de `async/await`.
+// * Detecta variables no definidas.
+// ## 🔹 Código muerto
+// * Elimina variables no utilizadas.
+// * Elimina funciones no usadas.
+// * Elimina parámetros no utilizados.
+// ## 🔹 Optimización
+// * Elimina código duplicado.
+// * Simplifica condicionales innecesarios.
+// ## 🔹 Buenas prácticas
+// * Mantiene uso consistente de punto y coma.
+// <!-- * Ordena imports (librerías externas → internas → relativas). -->
+// <!-- * Reemplaza `==` por `===` y `!=` por `!==`. -->
+// <!-- * Detecta asignaciones accidentales en condicionales (`if (a = 1)`). -->
+// <!-- * Sugiere uso de `.map`, `.filter`, `.reduce` en lugar de loops repetitivos. -->
+// <!-- * Reduce lógica redundante. -->
+// <!-- * Mejora nombres de variables poco descriptivos. -->
+// <!-- * Divide funciones o componentes demasiado largos. -->
+// <!-- * Mantiene consistencia en comillas (simples o dobles). -->
+
+
+
+
+	"🧠 Limpiar con RegExp para código limpio": {
+		"prefix": [
+			"no",
+			"nota"
+		],
+		"body": [
+			"\\{\\s*/\\*[\\s\\S]*?\\*/\\s*\\}\\n?",
+			"^\\s*//.*\\n?",
+			"/\\*[\\s\\S]*?\\*/\\n?",
+			"^\\s*console\\.(log|warn|info)\\(.*?\\);?\\s*$\\n?",
+			"^\\s*debugger;?\\s*$\\n?",
+			"^import .* from .*;?\\s*\\n?",
+			"<>\\s*</>",
+			"\\{\\s*\\}",
+			"[ ]{2,}",
+			"^\\t+",
+			"[ \\t]+$",
+			"(\\n\\s*){3,}",
+			",\\s*,+",
+		],
+		"description": "Limpieza avanzada de código JS / JSX / TSX"
+	},
+
+	"🧠🧠🧠 Limpiar con RegExp para código limpio": {
+		"prefix": [
+			"no",
+			"nota"
+		],
+		"body": [
+			"\\{\\s*/\\*[\\s\\S]*?\\*/\\s*\\}\\n?",
+			"/* Elimina comentarios JSX dentro de { /* */ } */",
+			"^\\s*//.*\\n?",
+			"/* Elimina comentarios de una línea // */",
+			"/\\*[\\s\\S]*?\\*/\\n?",
+			"/* Elimina comentarios multilínea /* */ */",
+			"^\\s*console\\.(log|info|clear)\\(.*?\\);?\\s*$\\n?",
+			"/* Elimina console.log / warn / info */",
+			"^\\s*debugger;?\\s*$\\n?",
+			"/* Elimina debugger */",
+			"^import .* from .*;?\\s*\\n?",
+			"/* Elimina imports completos (si se usa con cuidado) */",
+			"<>\\s*</>",
+			"/* Elimina fragments vacíos <> </> */",
+			"\\{\\s*\\}",
+			"/* Elimina objetos o bloques vacíos {} */",
+			"[ ]{2,}",
+			"/* Reduce múltiples espacios */",
+			"^\\t+",
+			"/* Elimina tabs al inicio */",
+			"[ \\t]+$",
+			"/* Elimina espacios al final de línea */",
+			"(\\n\\s*){3,}",
+			"/* Reduce múltiples saltos de línea */",
+			",\\s*,+",
+			"/* Corrige comas dobles ,, */",
+			"\\s+>",
+			"/* Elimina espacios antes de > */",
+			//    deues de ast, apostro,  antes de comillas
+			"\\{\\s*\"\\s*([^\"]*?)\\s*\\\"\\s*\\}",
+			"/* Convierte { \"texto\" } a formato limpio */",
+			"style={{\\$1}}"
+		],
+		"description": "Limpieza avanzada de código JS / JSX / TSX"
+	},			
+
+	"📝 Nota Tip rápido sobre let/const": {
+		"prefix": [
+			"no",
+			"nota"
+		],
+		"body": [
+			"// 📝 Nota:",
+			"// ⚡ Tip rápido sobre let/const",
+			"// Caso                          let    const",
+			"// Se reasigna la variable       ✅     ❌",
+			"// Se modifica contenido interno ❌     ✅",
+			"// Estilo funcional              ❌     ✅",
+			"// En este caso se usa `let` porque `data_mejorada` se reasigna después.",
+			"",
+			"const monedas = await MDL.empresa.getMonedas();",
+			"const modelos = await MDL.inventario.getAllModeloStock(this.state?.selectedAlmacen?.key ?? '');",
+			"",
+			"let data_mejorada = modelos.map(m => ({",
+			"  ...m,",
+			"  compra_moneda: monedas.find(mon => mon.key === m.precio_compra_moneda) || {}",
+			"}));",
+			"",
+			"if (this.state.selectedStock === 'con_stock') data_mejorada = data_mejorada.filter(m => m.stock > 0);",
+			"if (this.state.selectedStock === 'sin_stock') data_mejorada = data_mejorada.filter(m => !m.stock || m.stock === 0);",
+			"",
+			"this.modelos = data_mejorada;"
+		],
+		"description": "Snippet: Tip rápido sobre let/const y ejemplo de data_mejorada"
+	}
+}

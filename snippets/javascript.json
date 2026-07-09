@@ -1,0 +1,55 @@
+{
+	"Console Texto Colorido 💬": {
+		"prefix": "con",
+		"body": [
+			// "const colores = ['#FF4136', '#0074D9', '#2ECC40', '#FF851B', '#85144b'];",
+			// "const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];",
+			// "console.log(\"%c\" + ${1:ingresar_texto},`color:`+ ${colorAleatorio}+`; font-weight: bold;`);"
+			"console.clear();",
+			"console.log(\"%c\" + ${1:ingresar_texto},`color: #2ECC40; font-weight: bold;`);"
+		],
+		"description": "Console.log con color aleatorio y texto editable"
+	},
+	"Console JSON Colorido 🧩": {
+		"prefix": "con",
+		"body": [
+			"console.clear();",
+			"console.log(\"%c\" + JSON.stringify(${1:ingresar_JSON}, null, 2), \"color: #2ECC40; font-weight: bold;\");"
+		],
+		"description": "Console.log con JSON stringify y estilo colorido"
+	},
+	"Console Array Colorido 📊": {
+		"prefix": "con",
+		"body": [
+			"console.table(${1:ingresar_array});"
+		],
+		"description": "Console.table para arrays u objetos sin estilos"
+	},
+	"onPress Normal 🖱️": {
+		"prefix": "onp",
+		"body": [
+			"onPress={() => {",
+			"    console.log(\"Se presionó\");",
+			"}}"
+		],
+		"description": "onPress normal con mensaje en consola"
+	},
+	"onPress Async ⚡": {
+		"prefix": "onp",
+		"body": [
+			"onPress={async () => {",
+			"    try {",
+			"        const empresa = await MDL.empresa.getFull();",
+			"        if (!empresa?.key) {",
+			"            throw new Error('Error: los datos de la empresa faltan o no son válidos');",
+			"        }",
+			"        ${1:// Continuar con la lógica usando empresa}",
+			"    } catch (error) {",
+			"        console.error(error);",
+			"        ${2:// Manejo adicional de error, e.g., SNotification.send(...) }",
+			"    }",
+			"}}"
+		],
+		"description": "onPress con función async y manejo de errores"
+	}
+}
